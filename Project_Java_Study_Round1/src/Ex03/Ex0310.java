@@ -1,4 +1,4 @@
-package javajungsuk;
+package Ex03;
 
 public class Ex0310 {
 
