@@ -14,9 +14,18 @@ public class Ex0415 {
 		int result=0;
 		
 		while(tmp !=0){
+			result=result*10;
+			result=result+tmp%10;
+			tmp/=10;
 			
+			System.out.println(result);
 		}
-			
+
+		if (number==result) {
+			System.out.println(number+" is palindrome!");
+		} else {
+			System.out.println(number+" is not palindrome.");
+		}
 
 	}
 
