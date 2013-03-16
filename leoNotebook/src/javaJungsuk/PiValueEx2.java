@@ -1,6 +1,6 @@
-package javajungsuk;
+package javaJungsuk;
 
-public class PiValueEx1 {
+public class PiValueEx2 {
 
 	/**
 	 * @param args
@@ -9,10 +9,9 @@ public class PiValueEx1 {
 		// TODO Auto-generated method stub
 		
 		float pi=3.141592f;
-		float shortpi=(int)(pi*1000) / 1000f;
+		float shortpi= Math.round(pi*1000) / 1000f;
 		
 		System.out.println(shortpi);
-
 	}
 
 }

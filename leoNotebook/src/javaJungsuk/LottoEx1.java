@@ -1,6 +1,6 @@
-package javajungsuk;
+package javaJungsuk;
 
-public class LottoEx2 {
+public class LottoEx1 {
 
 	/**
 	 * @param args
@@ -20,15 +20,15 @@ public class LottoEx2 {
 
 		// 랜덤하게 배열안의 숫자를 바꾼다.
 
-		for (int i = 0; i < (ball.length)*3; i++) {
+		for (int i = 0; i < ball.length; i++) {
 
 			int temp;
 			int j;
 
 			j = (int) (Math.random() * 45);
 
-			temp = ball[0];
-			ball[0] = ball[j];
+			temp = ball[i];
+			ball[i] = ball[j];
 			ball[j] = temp;
 
 		}
@@ -41,4 +41,5 @@ public class LottoEx2 {
 		}
  
 	}
+
 }

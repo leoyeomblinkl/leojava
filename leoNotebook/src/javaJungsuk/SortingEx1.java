@@ -1,4 +1,4 @@
-package javajungsuk;
+package javaJungsuk;
 
 public class SortingEx1 {
 
