@@ -9,6 +9,11 @@ public class BullsAndCows {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+
+//		***********************************
+//		variable declaration & preparations
+//		***********************************
 		
 		int[] number=new int[9]; // variables declaration
 		int bullCount=0;
@@ -36,13 +41,17 @@ public class BullsAndCows {
 		Scanner scan = new Scanner(System.in);
 		String inputNumber;
 		
-//		System.out.println("¡§¥‰¿∫  "+ "' "+answer[0]+" "+answer[1]+" "+answer[2]+" "+answer[3]+" '"); // *cheat key* for showing answer
+//		System.out.println("The answer is  "+ "' "+answer[0]+" "+answer[1]+" "+answer[2]+" "+answer[3]+" '"); // *cheat key* for showing answer
 		System.out.print("Put four non-repetive numbers which are correct guess : ");
 		
 		Loop1 : do{
 			
-			++count;
-			
+			++count;  // count check
+
+
+//			****************************************************************
+//			input casting from String to integer & checking for input errors
+//			****************************************************************
 			String inputNumberTemp="";
 			inputNumberTemp=scan.nextLine();
 			
@@ -50,6 +59,8 @@ public class BullsAndCows {
 			int input=0;
 			inputNumber=inputNumberTemp.replaceAll(" ", "");
 //			System.out.println(inputNumber); // for space bar check
+			
+			
 			
 			for (int i = 0; i < inputNumber.length(); i++) { // casting string to integer
 				if ('1'<=inputNumber.charAt(i)&&inputNumber.charAt(i)<='9') {
@@ -96,6 +107,9 @@ public class BullsAndCows {
 			}
 			}
 		}
+//		************************
+//		check for bulls and cows
+//		************************
 		
 		System.out.println(guess[0]+" "+guess[1]+" "+guess[2]+" "+guess[3]); // Showing guess
 		

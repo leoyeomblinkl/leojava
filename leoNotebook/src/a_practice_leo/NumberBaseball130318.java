@@ -10,6 +10,10 @@ public class NumberBaseball130318 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+//		***********************************
+//		변수 선언 및 준비과정: 9개의 숫자 배열을 만들고 섞기
+//		***********************************
+		
 		int[] number=new int[9]; // 변수 선언. number 배열, 스트라이크 카운트, 볼 카운트, 시작메시지, 시도 횟수카운트.
 		int strikeCount=0;
 		int ballCount=0;
@@ -43,6 +47,9 @@ public class NumberBaseball130318 {
 			
 			++count;
 			
+//			***********************************************************************
+//			입력값을 string에서 integer로 변환하고 입력값에 오류 확인. 공백, 1~9의 숫자여부, 4개의 숫자인가 여부
+//			***********************************************************************
 			String inputNumberTemp="";
 			inputNumberTemp=scan.nextLine();
 			
@@ -97,6 +104,10 @@ public class NumberBaseball130318 {
 			}
 		}
 		
+		
+//		***********************
+//		스트라이크와 볼 연산 및 보여주기 영역
+//		***********************
 		System.out.println(guess[0]+" "+guess[1]+" "+guess[2]+" "+guess[3]); // guess 를 보여주는 열
 		
 		strikeCount=0;
