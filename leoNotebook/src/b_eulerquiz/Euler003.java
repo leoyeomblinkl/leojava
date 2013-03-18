@@ -1,4 +1,4 @@
-package eulerquiz;
+package b_eulerquiz;
 
 public class Euler003 {
 

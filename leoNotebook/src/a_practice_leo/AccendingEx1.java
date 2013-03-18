@@ -1,4 +1,4 @@
-package practice_leo;
+package a_practice_leo;
 
 public class AccendingEx1 {
 
