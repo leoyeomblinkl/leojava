@@ -1,6 +1,8 @@
 package practice_leo;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+//import javax.swing.JOptionPane;
 
 public class NumberBaseball {
 
@@ -13,7 +15,7 @@ public class NumberBaseball {
 		int[] number=new int[9]; // 변수 선언. number 배열, 스트라이크 카운트, 볼 카운트, 시작메시지, 시도 횟수카운트.
 		int strikeCount=0;
 		int ballCount=0;
-		String startMessage="";
+//		String startMessage="";  
 		int count=0;
 		
 		for (int i = 0; i < 9; i++) { // 1~9까지를 number배열에 배정.
@@ -29,20 +31,54 @@ public class NumberBaseball {
 			number[0]=temp;
 		}
 		
+		
 		int[] answer=new int[4]; // 컴퓨터의 문제답 배열(answer) 선언
 		System.arraycopy(number, 0, answer, 0, 4); // number 배열에서 처음 넷을 answer배열에 복사.
 		
+		Scanner scan = new Scanner(System.in);
+		String inputNumber;
 		
 //		System.out.println("정답은  "+ "' "+answer[0]+" "+answer[1]+" "+answer[2]+" "+answer[3]+" '"); // 답을 보여주는 치트키열
+		System.out.print("맞다고 생각하시는 중복되지 않는 1~9사이의 숫자 네 개를 적어주세요!: ");
 		
 		Loop1 : do{
 			
 			++count;
 			
-			startMessage = JOptionPane.showInputDialog("맞다고 생각하시는 숫자 네 개를 공백없이 붙여서 적어주세요!!!! 숫자는 중복되면 안됩니다!");
+			String inputNumberTemp="";
+			inputNumberTemp=scan.nextLine();
+//			startMessage = JOptionPane.showInputDialog("맞다고 생각하시는 숫자 네 개를 공백없이 붙여서 적어주세요!!!! 숫자는 중복되면 안됩니다!");
 			
-			int input = 0;
-			input=Integer.parseInt(startMessage);
+//			if(inputNumber==0){
+//				System.out.println("게임을 취소하셨습니다.");
+//				break Loop1;
+//			}
+//			
+			System.out.println(inputNumberTemp);
+			
+			int input=0;
+//			input=Integer.parseInt(startMessage);
+//			inputNumberTemp.trim( );
+			inputNumber=inputNumberTemp.replaceAll(" ", "");
+			System.out.println(inputNumber); // spacebar 공백 확인용 
+			
+			for (int i = 0; i < inputNumber.length(); i++) { //string 을 int로 변환
+				if ('1'<=inputNumber.charAt(i)&&inputNumber.charAt(i)<='9') {
+					int temp=inputNumber.charAt(i)-'0';
+					for (int j = 0; j < inputNumber.length()-i-1; j++) {
+						temp*=10;	
+					}
+					input+=temp;
+					
+//					System.out.println(input); // 확인용 출력
+					
+				} else {
+					System.out.println("1~9에 해당하는 숫자가 아닙니다! 다시 입력해주세요 ^^");
+					continue Loop1;
+				}
+			}
+			
+			
 			
 			System.out.println("==========시도횟수:"+count+"========");
 
