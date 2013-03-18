@@ -46,11 +46,10 @@ public class NumberBaseball130318 {
 			String inputNumberTemp="";
 			inputNumberTemp=scan.nextLine();
 			
-			System.out.println(inputNumberTemp);
 			
 			int input=0;
 			inputNumber=inputNumberTemp.replaceAll(" ", "");
-			System.out.println(inputNumber); // spacebar 공백 확인용 
+//			System.out.println(inputNumber); // spacebar 공백 확인용 
 			
 			for (int i = 0; i < inputNumber.length(); i++) { //string 을 int로 변환
 				if ('1'<=inputNumber.charAt(i)&&inputNumber.charAt(i)<='9') {
