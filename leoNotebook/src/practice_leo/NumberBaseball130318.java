@@ -10,17 +10,17 @@ public class NumberBaseball130318 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] number=new int[9]; // º¯¼ö ¼±¾ð. number ¹è¿­, ½ºÆ®¶óÀÌÅ© Ä«¿îÆ®, º¼ Ä«¿îÆ®, ½ÃÀÛ¸Þ½ÃÁö, ½Ãµµ È½¼öÄ«¿îÆ®.
+		int[] number=new int[9]; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. number ï¿½è¿­, ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å© Ä«ï¿½ï¿½Æ®, ï¿½ï¿½ Ä«ï¿½ï¿½Æ®, ï¿½ï¿½ï¿½Û¸Þ½ï¿½ï¿½ï¿½, ï¿½Ãµï¿½ È½ï¿½ï¿½Ä«ï¿½ï¿½Æ®.
 		int strikeCount=0;
 		int ballCount=0;
 //		String startMessage="";  
 		int count=0;
 		
-		for (int i = 0; i < 9; i++) { // 1~9±îÁö¸¦ number¹è¿­¿¡ ¹èÁ¤.
+		for (int i = 0; i < 9; i++) { // 1~9ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ numberï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 			number[i]=i+1;
 		}
 		
-		for (int i = 0; i < 20; i++) { // number ¹è¿­ ¼¯±â
+		for (int i = 0; i < 20; i++) { // number ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½
 			int temp;
 			int j=(int)(Math.random()*9);
 			
@@ -30,14 +30,14 @@ public class NumberBaseball130318 {
 		}
 		
 		
-		int[] answer=new int[4]; // ÄÄÇ»ÅÍÀÇ ¹®Á¦´ä ¹è¿­(answer) ¼±¾ð
-		System.arraycopy(number, 0, answer, 0, 4); // number ¹è¿­¿¡¼­ Ã³À½ ³ÝÀ» answer¹è¿­¿¡ º¹»ç.
+		int[] answer=new int[4]; // ï¿½ï¿½Ç»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­(answer) ï¿½ï¿½ï¿½ï¿½
+		System.arraycopy(number, 0, answer, 0, 4); // number ï¿½è¿­ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ answerï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
 		
 		Scanner scan = new Scanner(System.in);
 		String inputNumber;
 		
-//		System.out.println("Á¤´äÀº  "+ "' "+answer[0]+" "+answer[1]+" "+answer[2]+" "+answer[3]+" '"); // ´äÀ» º¸¿©ÁÖ´Â Ä¡Æ®Å°¿­
-		System.out.print("¸Â´Ù°í »ý°¢ÇÏ½Ã´Â Áßº¹µÇÁö ¾Ê´Â 1~9»çÀÌÀÇ ¼ýÀÚ ³× °³¸¦ Àû¾îÁÖ¼¼¿ä!: ");
+//		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  "+ "' "+answer[0]+" "+answer[1]+" "+answer[2]+" "+answer[3]+" '"); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ Ä¡Æ®Å°ï¿½ï¿½
+		System.out.print("ï¿½Â´Ù°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Ã´ï¿½ ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´ï¿½ 1~9ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½!: ");
 		
 		Loop1 : do{
 			
@@ -49,9 +49,9 @@ public class NumberBaseball130318 {
 			
 			int input=0;
 			inputNumber=inputNumberTemp.replaceAll(" ", "");
-//			System.out.println(inputNumber); // spacebar °ø¹é È®ÀÎ¿ë 
+//			System.out.println(inputNumber); // spacebar ï¿½ï¿½ï¿½ï¿½ È®ï¿½Î¿ï¿½ 
 			
-			for (int i = 0; i < inputNumber.length(); i++) { //string À» int·Î º¯È¯
+			for (int i = 0; i < inputNumber.length(); i++) { //string ï¿½ï¿½ intï¿½ï¿½ ï¿½ï¿½È¯
 				if ('1'<=inputNumber.charAt(i)&&inputNumber.charAt(i)<='9') {
 					int temp=inputNumber.charAt(i)-'0';
 					for (int j = 0; j < inputNumber.length()-i-1; j++) {
@@ -59,27 +59,27 @@ public class NumberBaseball130318 {
 					}
 					input+=temp;
 					
-//					System.out.println(input); // È®ÀÎ¿ë Ãâ·Â
+//					System.out.println(input); // È®ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½
 					
 				} else {
-					System.out.println("1~9¿¡ ÇØ´çÇÏ´Â ¼ýÀÚ°¡ ¾Æ´Õ´Ï´Ù! ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä ^^");
+					System.out.println("1~9ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Æ´Õ´Ï´ï¿½! ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½ ^^");
 					continue Loop1;
 				}
 			}
 			
 			
 			
-			System.out.println("==========½ÃµµÈ½¼ö:"+count+"========");
+			System.out.println("==========ï¿½Ãµï¿½È½ï¿½ï¿½:"+count+"========");
 
 		
 		
 			if(999>=input||input>=10000){
-				System.out.println("ÀÌ·±... ²À, ³× °³ÀÇ ¼ýÀÚ¸¦ Àû¾îÁÖ¼Å¾ß ÇÕ´Ï´Ù. ´Ù½Ã ÇØº¼±î¿ä?");
+				System.out.println("ï¿½Ì·ï¿½... ï¿½ï¿½, ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼Å¾ï¿½ ï¿½Õ´Ï´ï¿½. ï¿½Ù½ï¿½ ï¿½Øºï¿½ï¿½ï¿½ï¿½ï¿½?");
 				continue Loop1;
 			}
 		
 		int[] guess=new int[4];
-		for (int i = guess.length; i > 0; i--) { // ÀÔ·Â°ªÀ» ¹è¿­·Î ÀüÈ¯
+		for (int i = guess.length; i > 0; i--) { // ï¿½Ô·Â°ï¿½ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½È¯
 			guess[i-1]=input%10;
 			input/=10;
 			
@@ -87,17 +87,17 @@ public class NumberBaseball130318 {
 		
 
 		
-		for (int i = 0; i < guess.length-1; i++) { // Áßº¹µÇ´Â ¼ýÀÚ°¡ ÀÖ´ÂÁö °ËÃâ
+		for (int i = 0; i < guess.length-1; i++) { // ï¿½ßºï¿½ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			for (int j = 0; j < guess.length-1-i; j++) {
 							
 				if(guess[i]==guess[i+1] ){
-					System.out.println(" Áßº¹µÈ ¼ýÀÚ°¡ ÀÖ½À´Ï´Ù. ´äÀº Áßº¹µÈ ¼ýÀÚ°¡ ¾ø¾î¿ä!");
+					System.out.println(" ï¿½ßºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½Ö½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ ï¿½ßºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!");
 					continue Loop1;
 			}
 			}
 		}
 		
-		System.out.println(guess[0]+" "+guess[1]+" "+guess[2]+" "+guess[3]); // guess ¸¦ º¸¿©ÁÖ´Â ¿­
+		System.out.println(guess[0]+" "+guess[1]+" "+guess[2]+" "+guess[3]); // guess ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½ï¿½
 		
 		strikeCount=0;
 		ballCount=0;
@@ -117,13 +117,13 @@ public class NumberBaseball130318 {
 			}
 		}
 		
-				System.out.println("½ºÆ®¶óÀÌÅ© : "+strikeCount);
-		System.out.println("  º¼   : "+ballCount);
+				System.out.println("ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å© : "+strikeCount);
+		System.out.println("  ï¿½ï¿½   : "+ballCount);
 
 		if(strikeCount==4) {
 			System.out.println("=-=-================-=-=");
-			System.out.println("Á¤´ä "+ "' "+answer[0]+" "+answer[1]+" "+answer[2]+" "+answer[3]+" 'À» ¸ÂÃß¼Ì½À´Ï´Ù!");
-			System.out.println("ÃàÇÏÇÕ´Ï´Ù!! 4½ºÆ®¶óÀÌÅ© Â¦ÀÛÂ¦ ^^ ( "+count+"¹øÂ° µµÀü¿¡¼­ ¼º°ø )");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ "+ "' "+answer[0]+" "+answer[1]+" "+answer[2]+" "+answer[3]+" 'ï¿½ï¿½ ï¿½ï¿½ï¿½ß¼Ì½ï¿½ï¿½Ï´ï¿½!");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½!! 4ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½Å© Â¦ï¿½ï¿½Â¦ ^^ ( "+count+"ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ )");
 			break;
 		}
 		
@@ -133,3 +133,5 @@ public class NumberBaseball130318 {
 
 }
 }
+
+// added by jake yum
