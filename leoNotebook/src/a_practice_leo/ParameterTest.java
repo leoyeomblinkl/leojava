@@ -1,0 +1,28 @@
+package a_practice_leo;
+
+class Data { int x; }
+
+
+class ParameterTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Data d= new Data();
+		d.x=10;
+		System.out.println("main() : x= " + d.x);
+		
+		change(d.x);
+		System.out.println("After change(d.x)");
+		System.out.println("main() : " + d.x);
+		
+	}
+	
+	static void change(int x){
+		x=1000;
+		System.out.println("change() : x=" + x);
+	}
+
+}
